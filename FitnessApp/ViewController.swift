@@ -8,12 +8,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    let navigationAssistant = NavigationAssistant();
 
+    @IBOutlet weak var FromLeftStackViewConstraint: NSLayoutConstraint!;
+    @IBOutlet weak var FromRightStackViewConstraint: NSLayoutConstraint!;
+    
     override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        super.viewDidLoad();
+        let authenticatedUser = try? AuthenticationManager.shared.getAuthenticatedUser();
+        if(authenticatedUser != nil) {
+            show(navigationAssistant.moveToViewNoBack(viewController: "RootViewController"), sender: self);
+        }
     }
-
-
 }
-
