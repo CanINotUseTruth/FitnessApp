@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C08392A00C8A700A57953 /* AppDelegate.swift */; };
 		DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */; };
-		DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083D2A00C8A700A57953 /* ViewController.swift */; };
 		DA8C08412A00C8A700A57953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8C083F2A00C8A700A57953 /* Main.storyboard */; };
 		DA8C08432A00C8A800A57953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8C08422A00C8A800A57953 /* Assets.xcassets */; };
 		DA8C08462A00C8A800A57953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8C08442A00C8A800A57953 /* LaunchScreen.storyboard */; };
+		E0DBD76A2A20ED8B00ED0A09 /* MealTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBD7692A20ED8B00ED0A09 /* MealTrackerViewController.swift */; };
+		E0DBD7702A20F52100ED0A09 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0DBD76F2A20F52100ED0A09 /* Meal.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DA8C08362A00C8A700A57953 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8C08392A00C8A700A57953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		DA8C083D2A00C8A700A57953 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA8C08402A00C8A700A57953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA8C08422A00C8A800A57953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DA8C08452A00C8A800A57953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8C08472A00C8A800A57953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E0DBD7692A20ED8B00ED0A09 /* MealTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackerViewController.swift; sourceTree = "<group>"; };
+		E0DBD76F2A20F52100ED0A09 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,11 +60,12 @@
 			children = (
 				DA8C08392A00C8A700A57953 /* AppDelegate.swift */,
 				DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */,
-				DA8C083D2A00C8A700A57953 /* ViewController.swift */,
 				DA8C083F2A00C8A700A57953 /* Main.storyboard */,
 				DA8C08422A00C8A800A57953 /* Assets.xcassets */,
 				DA8C08442A00C8A800A57953 /* LaunchScreen.storyboard */,
 				DA8C08472A00C8A800A57953 /* Info.plist */,
+				E0DBD7692A20ED8B00ED0A09 /* MealTrackerViewController.swift */,
+				E0DBD76F2A20F52100ED0A09 /* Meal.swift */,
 			);
 			path = FitnessApp;
 			sourceTree = "<group>";
@@ -138,9 +141,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */,
+				E0DBD7702A20F52100ED0A09 /* Meal.swift in Sources */,
 				DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */,
 				DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */,
+				E0DBD76A2A20ED8B00ED0A09 /* MealTrackerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
