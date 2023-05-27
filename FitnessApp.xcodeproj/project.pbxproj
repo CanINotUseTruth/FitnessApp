@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C28C35FF2A21B898005BE659 /* Fitness+ in Resources */ = {isa = PBXBuildFile; fileRef = C28C35FE2A21B898005BE659 /* Fitness+ */; };
 		DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C08392A00C8A700A57953 /* AppDelegate.swift */; };
 		DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */; };
 		DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083D2A00C8A700A57953 /* ViewController.swift */; };
@@ -26,7 +27,19 @@
 		DAD5BD592A1EDC7B009FD61C /* ValidationAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD582A1EDC7B009FD61C /* ValidationAssistant.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		C28C35FC2A21B898005BE659 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = C28C35F82A21B898005BE659 /* Fitness+.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = C2372EF32A0B19C8003EDE02;
+			remoteInfo = "Fitness+";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		C28C35F82A21B898005BE659 /* Fitness+.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = "Fitness+.xcodeproj"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/iOS Developing/Fitness+/Fitness+/Fitness+.xcodeproj"; sourceTree = "<group>"; };
+		C28C35FE2A21B898005BE659 /* Fitness+ */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Fitness+"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/iOS Developing/Fitness+/Fitness+/Fitness+"; sourceTree = "<group>"; };
 		DA8C08362A00C8A700A57953 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8C08392A00C8A700A57953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -59,9 +72,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		C28C35F92A21B898005BE659 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C28C35FD2A21B898005BE659 /* Fitness+.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		C291952A2A21B67F00441262 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				C28C35FE2A21B898005BE659 /* Fitness+ */,
+				C28C35F82A21B898005BE659 /* Fitness+.xcodeproj */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -183,12 +206,28 @@
 			);
 			productRefGroup = DA8C08372A00C8A700A57953 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = C28C35F92A21B898005BE659 /* Products */;
+					ProjectRef = C28C35F82A21B898005BE659 /* Fitness+.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				DA8C08352A00C8A700A57953 /* FitnessApp */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		C28C35FD2A21B898005BE659 /* Fitness+.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "Fitness+.app";
+			remoteRef = C28C35FC2A21B898005BE659 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		DA8C08342A00C8A700A57953 /* Resources */ = {
@@ -198,6 +237,7 @@
 				DAD5BD3D2A1DE78D009FD61C /* GoogleService-Info.plist in Resources */,
 				DA8C08432A00C8A800A57953 /* Assets.xcassets in Resources */,
 				DA8C08412A00C8A700A57953 /* Main.storyboard in Resources */,
+				C28C35FF2A21B898005BE659 /* Fitness+ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
