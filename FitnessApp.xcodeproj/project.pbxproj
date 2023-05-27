@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		C29195252A21B1F200441262 /* Fitness+ in Resources */ = {isa = PBXBuildFile; fileRef = C29195242A21B1F200441262 /* Fitness+ */; };
 		DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C08392A00C8A700A57953 /* AppDelegate.swift */; };
 		DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */; };
 		DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083D2A00C8A700A57953 /* ViewController.swift */; };
@@ -28,7 +27,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		C29195242A21B1F200441262 /* Fitness+ */ = {isa = PBXFileReference; lastKnownFileType = folder; name = "Fitness+"; path = "../../../../Library/Mobile Documents/com~apple~CloudDocs/iOS Developing/Fitness+"; sourceTree = "<group>"; };
 		DA8C08362A00C8A700A57953 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8C08392A00C8A700A57953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,10 +59,9 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		C29195232A21B1C900441262 /* Tutorial */ = {
+		C291952A2A21B67F00441262 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
-				C29195242A21B1F200441262 /* Fitness+ */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -72,7 +69,7 @@
 		DA8C082D2A00C8A700A57953 = {
 			isa = PBXGroup;
 			children = (
-				C29195232A21B1C900441262 /* Tutorial */,
+				C291952A2A21B67F00441262 /* Tutorial */,
 				DA8C08382A00C8A700A57953 /* FitnessApp */,
 				DA8C08372A00C8A700A57953 /* Products */,
 				DAD5BD432A1DEE63009FD61C /* Frameworks */,
@@ -201,7 +198,6 @@
 				DAD5BD3D2A1DE78D009FD61C /* GoogleService-Info.plist in Resources */,
 				DA8C08432A00C8A800A57953 /* Assets.xcassets in Resources */,
 				DA8C08412A00C8A700A57953 /* Main.storyboard in Resources */,
-				C29195252A21B1F200441262 /* Fitness+ in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
