@@ -454,6 +454,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Hc3-Cf-sBY">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yul-se-sl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="zoc-Ke-Oa1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QBw-vD-NHj">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -463,14 +464,13 @@
                         <segue destination="aQl-cC-jWb" kind="relationship" relationship="rootViewController" id="BfM-9D-a5u"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yul-se-sl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2527" y="-16"/>
         </scene>
         <!--Calendar View Controller-->
         <scene sceneID="HR4-om-PoK">
             <objects>
-                <viewController id="XI0-Sg-XYJ" customClass="CalendarViewController" customModule="Calendar" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XI0-Sg-XYJ" customClass="CalendarViewController" customModule="FitnessApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vly-bP-7at">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

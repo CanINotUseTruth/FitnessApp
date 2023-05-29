@@ -7,8 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		8F3A40B22A24C00900599F2D /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A40B12A24C00900599F2D /* EKWrapper.swift */; };
-		8F3A40B42A24C01800599F2D /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F3A40B32A24C01700599F2D /* CalendarViewController.swift */; };
+		DA4A02A02A24C53F000FE644 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A029F2A24C53F000FE644 /* EKWrapper.swift */; };
+		DA4A02A22A24C557000FE644 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A02A12A24C557000FE644 /* CalendarViewController.swift */; };
 		DA728F0C2A24BA67004166DD /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = DA728F0B2A24BA67004166DD /* CalendarKit */; };
 		DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C08392A00C8A700A57953 /* AppDelegate.swift */; };
 		DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */; };
@@ -30,8 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		8F3A40B12A24C00900599F2D /* EKWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EKWrapper.swift; path = "../../../../Downloads/Fit-Calendar/Calendar/EKWrapper.swift"; sourceTree = "<group>"; };
-		8F3A40B32A24C01700599F2D /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarViewController.swift; path = "../../../../Downloads/Fit-Calendar/Calendar/CalendarViewController.swift"; sourceTree = "<group>"; };
+		DA4A029F2A24C53F000FE644 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
+		DA4A02A12A24C557000FE644 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DA8C08362A00C8A700A57953 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8C08392A00C8A700A57953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,9 +91,9 @@
 				DA8C08392A00C8A700A57953 /* AppDelegate.swift */,
 				DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */,
 				DA8C083D2A00C8A700A57953 /* ViewController.swift */,
-				8F3A40B32A24C01700599F2D /* CalendarViewController.swift */,
-				8F3A40B12A24C00900599F2D /* EKWrapper.swift */,
 				DAD5BD512A1E2FDA009FD61C /* RootViewContoller.swift */,
+				DA4A029F2A24C53F000FE644 /* EKWrapper.swift */,
+				DA4A02A12A24C557000FE644 /* CalendarViewController.swift */,
 				DA9B21B92A1F7A2E0057B09A /* TestViewController.swift */,
 				DA8C083F2A00C8A700A57953 /* Main.storyboard */,
 				DA8C08422A00C8A800A57953 /* Assets.xcassets */,
@@ -210,19 +210,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				8F3A40B42A24C01800599F2D /* CalendarViewController.swift in Sources */,
 				DAD5BD4E2A1E20EA009FD61C /* SignUpViewController.swift in Sources */,
 				DAD5BD592A1EDC7B009FD61C /* ValidationAssistant.swift in Sources */,
 				DA9B21BA2A1F7A2E0057B09A /* TestViewController.swift in Sources */,
+				DA4A02A02A24C53F000FE644 /* EKWrapper.swift in Sources */,
 				DAD5BD4A2A1E1A24009FD61C /* LoginViewController.swift in Sources */,
 				DAD5BD552A1E4046009FD61C /* NavigationAssistant.swift in Sources */,
 				DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */,
 				DAD5BD502A1E2197009FD61C /* AuthenticationManager.swift in Sources */,
+				DA4A02A22A24C557000FE644 /* CalendarViewController.swift in Sources */,
 				DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */,
 				DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */,
 				DAD5BD572A1ED6BE009FD61C /* ErrorHandlingAssistant.swift in Sources */,
 				DAD5BD522A1E2FDA009FD61C /* RootViewContoller.swift in Sources */,
-				8F3A40B22A24C00900599F2D /* EKWrapper.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
