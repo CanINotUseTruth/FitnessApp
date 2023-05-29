@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA728F092A24B994004166DD /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA728F082A24B994004166DD /* CalendarViewController.swift */; };
+		DA728F0C2A24BA67004166DD /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = DA728F0B2A24BA67004166DD /* CalendarKit */; };
+		DA728F0E2A24BAA1004166DD /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA728F0D2A24BAA1004166DD /* EKWrapper.swift */; };
 		DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C08392A00C8A700A57953 /* AppDelegate.swift */; };
 		DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */; };
 		DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083D2A00C8A700A57953 /* ViewController.swift */; };
@@ -27,6 +30,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA728F082A24B994004166DD /* CalendarViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = CalendarViewController.swift; path = "Fit-Calendar/Calendar/CalendarViewController.swift"; sourceTree = "<group>"; };
+		DA728F0D2A24BAA1004166DD /* EKWrapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = EKWrapper.swift; path = "Fit-Calendar/Calendar/EKWrapper.swift"; sourceTree = "<group>"; };
 		DA8C08362A00C8A700A57953 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8C08392A00C8A700A57953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +56,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DAD5BD422A1DE84D009FD61C /* FirebaseAnalyticsSwift in Frameworks */,
+				DA728F0C2A24BA67004166DD /* CalendarKit in Frameworks */,
 				DAD5BD452A1DEE63009FD61C /* FirebaseAuth in Frameworks */,
 				DAD5BD402A1DE84D009FD61C /* FirebaseAnalytics in Frameworks */,
 			);
@@ -85,6 +91,8 @@
 				DA8C08392A00C8A700A57953 /* AppDelegate.swift */,
 				DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */,
 				DA8C083D2A00C8A700A57953 /* ViewController.swift */,
+				DA728F0D2A24BAA1004166DD /* EKWrapper.swift */,
+				DA728F082A24B994004166DD /* CalendarViewController.swift */,
 				DAD5BD512A1E2FDA009FD61C /* RootViewContoller.swift */,
 				DA9B21B92A1F7A2E0057B09A /* TestViewController.swift */,
 				DA8C083F2A00C8A700A57953 /* Main.storyboard */,
@@ -141,6 +149,7 @@
 				DAD5BD3F2A1DE84D009FD61C /* FirebaseAnalytics */,
 				DAD5BD412A1DE84D009FD61C /* FirebaseAnalyticsSwift */,
 				DAD5BD442A1DEE63009FD61C /* FirebaseAuth */,
+				DA728F0B2A24BA67004166DD /* CalendarKit */,
 			);
 			productName = FitnessApp;
 			productReference = DA8C08362A00C8A700A57953 /* FitnessApp.app */;
@@ -172,6 +181,7 @@
 			mainGroup = DA8C082D2A00C8A700A57953;
 			packageReferences = (
 				DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DA728F0A2A24BA67004166DD /* XCRemoteSwiftPackageReference "CalendarKit" */,
 			);
 			productRefGroup = DA8C08372A00C8A700A57953 /* Products */;
 			projectDirPath = "";
@@ -200,8 +210,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DA728F092A24B994004166DD /* CalendarViewController.swift in Sources */,
 				DAD5BD4E2A1E20EA009FD61C /* SignUpViewController.swift in Sources */,
 				DAD5BD592A1EDC7B009FD61C /* ValidationAssistant.swift in Sources */,
+				DA728F0E2A24BAA1004166DD /* EKWrapper.swift in Sources */,
 				DA9B21BA2A1F7A2E0057B09A /* TestViewController.swift in Sources */,
 				DAD5BD4A2A1E1A24009FD61C /* LoginViewController.swift in Sources */,
 				DAD5BD552A1E4046009FD61C /* NavigationAssistant.swift in Sources */,
@@ -428,6 +440,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		DA728F0A2A24BA67004166DD /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.7;
+			};
+		};
 		DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
@@ -439,6 +459,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DA728F0B2A24BA67004166DD /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA728F0A2A24BA67004166DD /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
 		DAD5BD3F2A1DE84D009FD61C /* FirebaseAnalytics */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
