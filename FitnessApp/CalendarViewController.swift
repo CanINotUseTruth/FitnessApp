@@ -20,7 +20,9 @@ final class CalendarViewController: DayViewController, EKEventEditViewDelegate {
         navigationBar.standardAppearance = appearance
         navigationBar.scrollEdgeAppearance = appearance
 
-        view.window?.rootViewController = navigationController
+//        view.window?.rootViewController = navigationController
+        
+        UIApplication.shared.windows.first?.rootViewController = navigationController
 
         requestAccessToCalendar()
         subscribeToNotifications()
@@ -35,7 +37,7 @@ final class CalendarViewController: DayViewController, EKEventEditViewDelegate {
 
     @objc func closeCalendar(sender: UIButton!) {
         let initBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        self.present(initBoard.instantiateViewController(withIdentifier: "initialView"), animated: true, completion: nil)
+        self.present(initBoard.instantiateViewController(withIdentifier: "RootViewController"), animated: true, completion: nil)
     }
 
     override func viewWillAppear(_ animated: Bool) {
