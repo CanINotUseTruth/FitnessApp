@@ -409,20 +409,20 @@
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="jVd-Gp-Gl1">
                                 <rect key="frame" x="135.66666666666666" y="359.66666666666669" width="121.99999999999997" height="133"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1W-N0-6HA">
-                                        <rect key="frame" x="0.0" y="0.0" width="122" height="34.333333333333336"/>
-                                        <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Calendar"/>
-                                        <connections>
-                                            <segue destination="oxF-sH-Dal" kind="showDetail" id="XTN-oN-1GX"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SKi-6Z-d1f">
-                                        <rect key="frame" x="0.0" y="49.333333333333314" width="122" height="34.333333333333343"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="122" height="34.333333333333336"/>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Meal Tracker"/>
                                         <connections>
                                             <segue destination="Zbv-13-xeY" kind="show" id="Ifm-fP-Okw"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r1W-N0-6HA">
+                                        <rect key="frame" x="0.0" y="49.333333333333314" width="122" height="34.333333333333343"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Calendar"/>
+                                        <connections>
+                                            <segue destination="oxF-sH-Dal" kind="showDetail" id="XTN-oN-1GX"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nqr-aV-Dil">
@@ -456,7 +456,6 @@
         <!--Navigation Controller-->
         <scene sceneID="Hc3-Cf-sBY">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Yul-se-sl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="zoc-Ke-Oa1" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QBw-vD-NHj">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
@@ -466,6 +465,7 @@
                         <segue destination="aQl-cC-jWb" kind="relationship" relationship="rootViewController" id="BfM-9D-a5u"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Yul-se-sl8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2527" y="-16"/>
         </scene>
