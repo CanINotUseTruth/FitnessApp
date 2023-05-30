@@ -7,23 +7,51 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA07EC0F2A259DD400352B04 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07EC0E2A259DD400352B04 /* Meal.swift */; };
+		DA07EC112A259DF800352B04 /* MealTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07EC102A259DF800352B04 /* MealTrackerViewController.swift */; };
+		DA4A02A02A24C53F000FE644 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A029F2A24C53F000FE644 /* EKWrapper.swift */; };
+		DA4A02A22A24C557000FE644 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A02A12A24C557000FE644 /* CalendarViewController.swift */; };
+		DA728F0C2A24BA67004166DD /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = DA728F0B2A24BA67004166DD /* CalendarKit */; };
 		DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C08392A00C8A700A57953 /* AppDelegate.swift */; };
 		DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */; };
 		DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA8C083D2A00C8A700A57953 /* ViewController.swift */; };
 		DA8C08412A00C8A700A57953 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8C083F2A00C8A700A57953 /* Main.storyboard */; };
 		DA8C08432A00C8A800A57953 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DA8C08422A00C8A800A57953 /* Assets.xcassets */; };
-		DA8C08462A00C8A800A57953 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DA8C08442A00C8A800A57953 /* LaunchScreen.storyboard */; };
+		DA9B21BA2A1F7A2E0057B09A /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA9B21B92A1F7A2E0057B09A /* TestViewController.swift */; };
+		DAD5BD3D2A1DE78D009FD61C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DAD5BD3C2A1DE78D009FD61C /* GoogleService-Info.plist */; };
+		DAD5BD402A1DE84D009FD61C /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = DAD5BD3F2A1DE84D009FD61C /* FirebaseAnalytics */; };
+		DAD5BD422A1DE84D009FD61C /* FirebaseAnalyticsSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DAD5BD412A1DE84D009FD61C /* FirebaseAnalyticsSwift */; };
+		DAD5BD452A1DEE63009FD61C /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = DAD5BD442A1DEE63009FD61C /* FirebaseAuth */; };
+		DAD5BD4A2A1E1A24009FD61C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD492A1E1A24009FD61C /* LoginViewController.swift */; };
+		DAD5BD4E2A1E20EA009FD61C /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD4D2A1E20EA009FD61C /* SignUpViewController.swift */; };
+		DAD5BD502A1E2197009FD61C /* AuthenticationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD4F2A1E2197009FD61C /* AuthenticationManager.swift */; };
+		DAD5BD522A1E2FDA009FD61C /* RootViewContoller.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD512A1E2FDA009FD61C /* RootViewContoller.swift */; };
+		DAD5BD552A1E4046009FD61C /* NavigationAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD542A1E4046009FD61C /* NavigationAssistant.swift */; };
+		DAD5BD572A1ED6BE009FD61C /* ErrorHandlingAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD562A1ED6BE009FD61C /* ErrorHandlingAssistant.swift */; };
+		DAD5BD592A1EDC7B009FD61C /* ValidationAssistant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DAD5BD582A1EDC7B009FD61C /* ValidationAssistant.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA07EC0E2A259DD400352B04 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		DA07EC102A259DF800352B04 /* MealTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackerViewController.swift; sourceTree = "<group>"; };
+		DA4A029F2A24C53F000FE644 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
+		DA4A02A12A24C557000FE644 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DA8C08362A00C8A700A57953 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA8C08392A00C8A700A57953 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DA8C083D2A00C8A700A57953 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		DA8C08402A00C8A700A57953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DA8C08422A00C8A800A57953 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DA8C08452A00C8A800A57953 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DA8C08472A00C8A800A57953 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DA9B21B92A1F7A2E0057B09A /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		DAD5BD3C2A1DE78D009FD61C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DAD5BD492A1E1A24009FD61C /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		DAD5BD4D2A1E20EA009FD61C /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		DAD5BD4F2A1E2197009FD61C /* AuthenticationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationManager.swift; sourceTree = "<group>"; };
+		DAD5BD512A1E2FDA009FD61C /* RootViewContoller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewContoller.swift; sourceTree = "<group>"; };
+		DAD5BD542A1E4046009FD61C /* NavigationAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationAssistant.swift; sourceTree = "<group>"; };
+		DAD5BD562A1ED6BE009FD61C /* ErrorHandlingAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ErrorHandlingAssistant.swift; sourceTree = "<group>"; };
+		DAD5BD582A1EDC7B009FD61C /* ValidationAssistant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidationAssistant.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +59,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD5BD422A1DE84D009FD61C /* FirebaseAnalyticsSwift in Frameworks */,
+				DA728F0C2A24BA67004166DD /* CalendarKit in Frameworks */,
+				DAD5BD452A1DEE63009FD61C /* FirebaseAuth in Frameworks */,
+				DAD5BD402A1DE84D009FD61C /* FirebaseAnalytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +74,7 @@
 			children = (
 				DA8C08382A00C8A700A57953 /* FitnessApp */,
 				DA8C08372A00C8A700A57953 /* Products */,
+				DAD5BD432A1DEE63009FD61C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +89,50 @@
 		DA8C08382A00C8A700A57953 /* FitnessApp */ = {
 			isa = PBXGroup;
 			children = (
+				DAD5BD532A1E4028009FD61C /* Assistants */,
+				DAD5BD462A1E19C6009FD61C /* Authentication */,
+				DAD5BD3C2A1DE78D009FD61C /* GoogleService-Info.plist */,
 				DA8C08392A00C8A700A57953 /* AppDelegate.swift */,
 				DA8C083B2A00C8A700A57953 /* SceneDelegate.swift */,
 				DA8C083D2A00C8A700A57953 /* ViewController.swift */,
+				DAD5BD512A1E2FDA009FD61C /* RootViewContoller.swift */,
+				DA4A029F2A24C53F000FE644 /* EKWrapper.swift */,
+				DA4A02A12A24C557000FE644 /* CalendarViewController.swift */,
+				DA07EC0E2A259DD400352B04 /* Meal.swift */,
+				DA07EC102A259DF800352B04 /* MealTrackerViewController.swift */,
+				DA9B21B92A1F7A2E0057B09A /* TestViewController.swift */,
 				DA8C083F2A00C8A700A57953 /* Main.storyboard */,
 				DA8C08422A00C8A800A57953 /* Assets.xcassets */,
-				DA8C08442A00C8A800A57953 /* LaunchScreen.storyboard */,
 				DA8C08472A00C8A800A57953 /* Info.plist */,
 			);
 			path = FitnessApp;
+			sourceTree = "<group>";
+		};
+		DAD5BD432A1DEE63009FD61C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DAD5BD462A1E19C6009FD61C /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				DAD5BD492A1E1A24009FD61C /* LoginViewController.swift */,
+				DAD5BD4D2A1E20EA009FD61C /* SignUpViewController.swift */,
+				DAD5BD4F2A1E2197009FD61C /* AuthenticationManager.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		DAD5BD532A1E4028009FD61C /* Assistants */ = {
+			isa = PBXGroup;
+			children = (
+				DAD5BD542A1E4046009FD61C /* NavigationAssistant.swift */,
+				DAD5BD562A1ED6BE009FD61C /* ErrorHandlingAssistant.swift */,
+				DAD5BD582A1EDC7B009FD61C /* ValidationAssistant.swift */,
+			);
+			path = Assistants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -83,6 +151,12 @@
 			dependencies = (
 			);
 			name = FitnessApp;
+			packageProductDependencies = (
+				DAD5BD3F2A1DE84D009FD61C /* FirebaseAnalytics */,
+				DAD5BD412A1DE84D009FD61C /* FirebaseAnalyticsSwift */,
+				DAD5BD442A1DEE63009FD61C /* FirebaseAuth */,
+				DA728F0B2A24BA67004166DD /* CalendarKit */,
+			);
 			productName = FitnessApp;
 			productReference = DA8C08362A00C8A700A57953 /* FitnessApp.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +185,10 @@
 				Base,
 			);
 			mainGroup = DA8C082D2A00C8A700A57953;
+			packageReferences = (
+				DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				DA728F0A2A24BA67004166DD /* XCRemoteSwiftPackageReference "CalendarKit" */,
+			);
 			productRefGroup = DA8C08372A00C8A700A57953 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -125,7 +203,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DA8C08462A00C8A800A57953 /* LaunchScreen.storyboard in Resources */,
+				DAD5BD3D2A1DE78D009FD61C /* GoogleService-Info.plist in Resources */,
 				DA8C08432A00C8A800A57953 /* Assets.xcassets in Resources */,
 				DA8C08412A00C8A700A57953 /* Main.storyboard in Resources */,
 			);
@@ -138,9 +216,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DAD5BD4E2A1E20EA009FD61C /* SignUpViewController.swift in Sources */,
+				DAD5BD592A1EDC7B009FD61C /* ValidationAssistant.swift in Sources */,
+				DA07EC0F2A259DD400352B04 /* Meal.swift in Sources */,
+				DA9B21BA2A1F7A2E0057B09A /* TestViewController.swift in Sources */,
+				DA4A02A02A24C53F000FE644 /* EKWrapper.swift in Sources */,
+				DA07EC112A259DF800352B04 /* MealTrackerViewController.swift in Sources */,
+				DAD5BD4A2A1E1A24009FD61C /* LoginViewController.swift in Sources */,
+				DAD5BD552A1E4046009FD61C /* NavigationAssistant.swift in Sources */,
 				DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */,
+				DAD5BD502A1E2197009FD61C /* AuthenticationManager.swift in Sources */,
+				DA4A02A22A24C557000FE644 /* CalendarViewController.swift in Sources */,
 				DA8C083A2A00C8A700A57953 /* AppDelegate.swift in Sources */,
 				DA8C083C2A00C8A700A57953 /* SceneDelegate.swift in Sources */,
+				DAD5BD572A1ED6BE009FD61C /* ErrorHandlingAssistant.swift in Sources */,
+				DAD5BD522A1E2FDA009FD61C /* RootViewContoller.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,14 +243,6 @@
 				DA8C08402A00C8A700A57953 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DA8C08442A00C8A800A57953 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DA8C08452A00C8A800A57953 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -294,6 +376,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -301,6 +384,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uts.student.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -321,6 +407,7 @@
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 16.2;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -328,6 +415,9 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = uts.student.FitnessApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -356,6 +446,48 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DA728F0A2A24BA67004166DD /* XCRemoteSwiftPackageReference "CalendarKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/richardtop/CalendarKit.git";
+			requirement = {
+				kind = exactVersion;
+				version = 1.1.7;
+			};
+		};
+		DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = exactVersion;
+				version = 10.10.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DA728F0B2A24BA67004166DD /* CalendarKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DA728F0A2A24BA67004166DD /* XCRemoteSwiftPackageReference "CalendarKit" */;
+			productName = CalendarKit;
+		};
+		DAD5BD3F2A1DE84D009FD61C /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		DAD5BD412A1DE84D009FD61C /* FirebaseAnalyticsSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalyticsSwift;
+		};
+		DAD5BD442A1DEE63009FD61C /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DAD5BD3E2A1DE84D009FD61C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DA8C082E2A00C8A700A57953 /* Project object */;
 }
