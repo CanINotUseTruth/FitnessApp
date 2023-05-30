@@ -29,11 +29,10 @@
 ////
 ////  Created by Sonny on 27/5/2023.
 ////
-
 import Foundation
 
 struct Meal {
     var category: String
     var name: String
-    var calories: String?
+    var calories: Int?
 }
