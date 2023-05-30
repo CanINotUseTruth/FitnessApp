@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DA07EC0F2A259DD400352B04 /* Meal.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07EC0E2A259DD400352B04 /* Meal.swift */; };
+		DA07EC112A259DF800352B04 /* MealTrackerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA07EC102A259DF800352B04 /* MealTrackerViewController.swift */; };
 		DA4A02A02A24C53F000FE644 /* EKWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A029F2A24C53F000FE644 /* EKWrapper.swift */; };
 		DA4A02A22A24C557000FE644 /* CalendarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DA4A02A12A24C557000FE644 /* CalendarViewController.swift */; };
 		DA728F0C2A24BA67004166DD /* CalendarKit in Frameworks */ = {isa = PBXBuildFile; productRef = DA728F0B2A24BA67004166DD /* CalendarKit */; };
@@ -30,6 +32,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DA07EC0E2A259DD400352B04 /* Meal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Meal.swift; sourceTree = "<group>"; };
+		DA07EC102A259DF800352B04 /* MealTrackerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTrackerViewController.swift; sourceTree = "<group>"; };
 		DA4A029F2A24C53F000FE644 /* EKWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EKWrapper.swift; sourceTree = "<group>"; };
 		DA4A02A12A24C557000FE644 /* CalendarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarViewController.swift; sourceTree = "<group>"; };
 		DA8C08362A00C8A700A57953 /* FitnessApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitnessApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -94,6 +98,8 @@
 				DAD5BD512A1E2FDA009FD61C /* RootViewContoller.swift */,
 				DA4A029F2A24C53F000FE644 /* EKWrapper.swift */,
 				DA4A02A12A24C557000FE644 /* CalendarViewController.swift */,
+				DA07EC0E2A259DD400352B04 /* Meal.swift */,
+				DA07EC102A259DF800352B04 /* MealTrackerViewController.swift */,
 				DA9B21B92A1F7A2E0057B09A /* TestViewController.swift */,
 				DA8C083F2A00C8A700A57953 /* Main.storyboard */,
 				DA8C08422A00C8A800A57953 /* Assets.xcassets */,
@@ -212,8 +218,10 @@
 			files = (
 				DAD5BD4E2A1E20EA009FD61C /* SignUpViewController.swift in Sources */,
 				DAD5BD592A1EDC7B009FD61C /* ValidationAssistant.swift in Sources */,
+				DA07EC0F2A259DD400352B04 /* Meal.swift in Sources */,
 				DA9B21BA2A1F7A2E0057B09A /* TestViewController.swift in Sources */,
 				DA4A02A02A24C53F000FE644 /* EKWrapper.swift in Sources */,
+				DA07EC112A259DF800352B04 /* MealTrackerViewController.swift in Sources */,
 				DAD5BD4A2A1E1A24009FD61C /* LoginViewController.swift in Sources */,
 				DAD5BD552A1E4046009FD61C /* NavigationAssistant.swift in Sources */,
 				DA8C083E2A00C8A700A57953 /* ViewController.swift in Sources */,
