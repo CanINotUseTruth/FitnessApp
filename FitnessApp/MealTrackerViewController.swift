@@ -3,7 +3,7 @@
 //  FitnessApp
 //
 //  Created by Sonny on 26/5/2023.
-//s
+
 
 import UIKit
 
@@ -53,7 +53,11 @@ class MealTableViewController: UITableViewController {
             if let mealsInSection = meals[sectionTitle], indexPath.row < mealsInSection.count {
                 let meal = mealsInSection[indexPath.row]
                 cell.textLabel?.text = meal.name
-                cell.detailTextLabel?.text = meal.calories
+                if let calories = meal.calories {
+                    cell.detailTextLabel?.text = "\(calories) calories"
+                } else {
+                    cell.detailTextLabel?.text = "Unknown"
+                }
             }
             return cell
         }
@@ -98,6 +102,9 @@ class MealTableViewController: UITableViewController {
                   let caloriesString = alertController.textFields?.last?.text,
                   let calories = Int(caloriesString)
             else {
+                self?.showInvalidInputAlert {
+                    self?.addMealButtonPressed()
+                }
                 return
             }
             self?.addNewMeal(category: mealCategory, name: mealName, calories: calories)
@@ -107,18 +114,21 @@ class MealTableViewController: UITableViewController {
     }
     
     func addNewMeal(category: String, name: String, calories: Int) {
-        let newMeal = Meal(category: category, name: name, calories: "\(calories) calories")
+        // to make inputs case insensitive and eliminate any trailing/leading whitespace
+        let cleanedCategory = category.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
         
-        if let existingSectionIndex = mealSections.firstIndex(of: category) {
+        let newMeal = Meal(category: cleanedCategory, name: name, calories: calories)
+        
+        if let existingSectionIndex = mealSections.firstIndex(where: { $0.lowercased() == cleanedCategory }) {
             let sectionTitle = mealSections[existingSectionIndex]
             meals[sectionTitle]?.append(newMeal)
         } else {
-            if var existingMeals = meals[category] {
+            if var existingMeals = meals[cleanedCategory] {
                 existingMeals.append(newMeal)
-                meals[category] = existingMeals
+                meals[cleanedCategory] = existingMeals
             } else {
-                meals[category] = [newMeal]
-                mealSections.append(category)
+                meals[cleanedCategory] = [newMeal]
+                mealSections.append(cleanedCategory)
             }
         }
         
@@ -140,6 +150,9 @@ class MealTableViewController: UITableViewController {
             guard let calorieGoalString = alertController.textFields?.first?.text,
                   let calorieGoal = Int(calorieGoalString)
             else {
+                self?.showInvalidInputAlert {
+                    self?.addCalorieGoalSection()
+                }
                 return
             }
             self?.setCalorieGoal(calorieGoal)
@@ -149,6 +162,130 @@ class MealTableViewController: UITableViewController {
     }
     
     func setCalorieGoal(_ goal: Int) {
+        calorieGoal = goal
+        tableView.reloadData()
+        print("Calorie Goal set: \(goal) calories")
+    }
+    
+    func showInvalidInputAlert(completion: (() -> Void)?) {
+        let alertController = UIAlertController(title: "Invalid Input", message: "Please enter valid inputs.", preferredStyle: .alert)
+        alertController.addAction(UIAlertAction(title: "OK", style: .default, handler: { _ in
+            completion?()
+        }))
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        if indexPath.section == 0 {
+            // Calorie goal section, allow editing
+            editCalorieGoal()
+        } else {
+            // Meal sections, allow editing
+            let sectionTitle = mealSections[indexPath.section - 1]
+            if let mealsInSection = meals[sectionTitle], indexPath.row < mealsInSection.count {
+                let meal = mealsInSection[indexPath.row]
+                editMeal(meal)
+            }
+        }
+    }
+    
+    func editMeal(_ meal: Meal) {
+        let alertController = UIAlertController(title: "Edit Meal", message: nil, preferredStyle: .alert)
+        
+        alertController.addTextField { textField in
+            textField.text = meal.category
+        }
+        
+        alertController.addTextField { textField in
+            textField.text = meal.name
+        }
+        
+        alertController.addTextField { textField in
+            if let calories = meal.calories {
+                textField.text = "\(calories)"
+            }
+            textField.keyboardType = .numberPad
+        }
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Save", style: .default) { [weak self] _ in
+            guard let mealCategory = alertController.textFields?.first?.text,
+                  let mealName = alertController.textFields?[1].text,
+                  let caloriesString = alertController.textFields?.last?.text,
+                  let calories = Int(caloriesString)
+            else {
+                self?.showInvalidInputAlert(completion: nil)
+                return
+            }
+            self?.updateMeal(meal, category: mealCategory, name: mealName, calories: calories)
+        })
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func updateMeal(_ meal: Meal, category: String, name: String, calories: Int) {
+        // Remove the meal from the previous category
+        if let sectionIndex = mealSections.firstIndex(where: { $0.lowercased() == meal.category.lowercased() }),
+           let mealsInSection = meals[meal.category],
+           let mealIndex = mealsInSection.firstIndex(where: { $0.name == meal.name }) {
+            meals[meal.category]?.remove(at: mealIndex)
+            if meals[meal.category]?.isEmpty == true {
+                meals[meal.category] = nil
+                mealSections.remove(at: sectionIndex)
+            }
+        }
+        
+        // Add the updated meal
+        let cleanedCategory = category.trimmingCharacters(in: .whitespacesAndNewlines).lowercased()
+        let updatedMeal = Meal(category: cleanedCategory, name: name, calories: calories)
+        
+        if let existingSectionIndex = mealSections.firstIndex(where: { $0.lowercased() == cleanedCategory }) {
+            let sectionTitle = mealSections[existingSectionIndex]
+            meals[sectionTitle]?.append(updatedMeal)
+        } else {
+            if var existingMeals = meals[cleanedCategory] {
+                existingMeals.append(updatedMeal)
+                meals[cleanedCategory] = existingMeals
+            } else {
+                meals[cleanedCategory] = [updatedMeal]
+                mealSections.append(cleanedCategory)
+            }
+        }
+        
+        // Update total calories
+        totalCalories -= meal.calories ?? 0
+        totalCalories += calories
+        
+        tableView.reloadData()
+        print("Total Calories: \(totalCalories)")
+    }
+    
+    func editCalorieGoal() {
+        let alertController = UIAlertController(title: "Edit Calorie Goal", message: nil, preferredStyle: .alert)
+        
+        alertController.addTextField { textField in
+            if let goal = self.calorieGoal {
+                textField.text = "\(goal)"
+            }
+            textField.keyboardType = .numberPad
+        }
+        
+        alertController.addAction(UIAlertAction(title: "Cancel", style: .cancel, handler: nil))
+        alertController.addAction(UIAlertAction(title: "Save", style: .default) { [weak self] _ in
+            guard let calorieGoalString = alertController.textFields?.first?.text,
+                  let calorieGoal = Int(calorieGoalString)
+            else {
+                self?.showInvalidInputAlert(completion: nil)
+                return
+            }
+            self?.updateCalorieGoal(calorieGoal)
+        })
+        
+        present(alertController, animated: true, completion: nil)
+    }
+    
+    func updateCalorieGoal(_ goal: Int) {
         calorieGoal = goal
         tableView.reloadData()
         print("Calorie Goal set: \(goal) calories")
